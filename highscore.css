@@ -1,0 +1,12 @@
+.highscoreitem{
+    list-style: none;
+    
+}
+#highscorelist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    
+}

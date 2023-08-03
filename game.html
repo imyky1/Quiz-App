@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="game.css">
+  <title>Quiz</title>
+</head>
+
+<body>
+  <div class="card">
+    <div class="selection-card">
+      <h1>Select Category</h1>
+      <button onclick="selectedCategory(event)" name="History" class="btn">History</button>
+      <button onclick="selectedCategory(event)" name="Science" class="btn">Science</button>
+      <button onclick="selectedCategory(event)" name="General Knowlegde" class="btn">General Knowlegde</button>
+    </div>
+    <div class="game disabled">
+      <!-- hud container -->
+      <div class="card-body" id="hud">
+        <div class="hud-tem" id="hud-item">
+          <p class="hud-prefix">Question</p>
+          <h1 class="hud-main-text" id="questionCounter"></h1>
+        </div>
+        <div id="progress">
+          <div id="progress-bar">
+            <div id="progressbarfull">
+
+            </div>
+          </div>
+          <div id="timer-hud">
+            <h5>Time Remaininng</h5>
+            <div id="timer">00:15</div>
+          </div>
+        </div>
+        <div class="hud-tem" id="hud-item">
+          <p class="hud-prefix">Score</p>
+          <h1 class="hud-main-text" id="score">0</h1>
+        </div>
+      </div>
+      <!-- quiz container -->
+      <div class="card-body">
+        <div id="quiz">
+          <h2 class="card-title" id="question">Answer the Following Question</h2>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="1">Option 1</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="2">Option 2</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="3">Option 3</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="4">Option 4</p>
+          </div>
+        </div>
+      </div>
+      <!-- footer container -->
+      <div class="card-body">
+        <div>
+          <a href="./index.html" class="btn btn-danger card-link">Exit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

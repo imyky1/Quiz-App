@@ -1,0 +1,88 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selection-card{
+    display: flex;
+    flex-direction: column;  
+}
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    border: 0.1rem solid #322653;
+    background-color: white;
+    width: 100%;
+    font-size: 1.8rem;
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 #56a5eb;
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    background-color: #8062D6;
+    margin: 0;
+}
+.choice-text{
+    padding: 1.5rem;
+    margin: 0;
+    width: 100%;
+}
+.correct{
+    background-color: seagreen;
+}
+.incorrect{
+    background-color: rgb(241, 85, 85);
+}
+
+/* hud styles */
+#hud{
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+#progress{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#progress-bar{
+    height: 4rem;
+    width: 20rem;
+    border:0.2rem solid #56a5eb;
+    border-radius: 2rem;
+}
+#progressbarfull{
+    border-radius: 2rem;
+    height: 3.6rem;
+    background-color: #8062D6;
+    width: 0;
+}
+#timer-hud{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#timer{
+    border:0.2rem solid #8062D6;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+}
+.disabled{
+    display: none;
+}
