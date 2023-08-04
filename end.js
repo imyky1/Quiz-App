@@ -2,7 +2,12 @@ let scoretext = document.getElementById('score-text')
 let username = document.getElementById('username')
 let savebutton = document.getElementById('savebutton')
 const currentScore = localStorage.getItem('Score')
+if(currentScore>2){
 scoretext.innerText = `You scored ${currentScore} out of 5! Great job!`
+}
+else{
+    scoretext.innerText = `You scored ${currentScore} out of 5! Better luck next time!`
+}
 
 const highscore = JSON.parse(localStorage.getItem('highscore')) || []
 console.log(highscore)
